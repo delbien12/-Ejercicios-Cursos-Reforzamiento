@@ -2,13 +2,14 @@
 mes = int(input("Ingrese el número del mes (1-12): "))
 match mes:
     case 12 | 1 | 2:
-        estacion("Es invierno.")
+        estacion = "Invierno"
     case 3 | 4 | 5:
-        estacion("Es primavera.")  
-    case 6 | 7 | 8: 
-        estacion("Es verano.")
+        estacion = "Primavera"
+    case 6 | 7 | 8:
+        estacion = "Verano"
     case 9 | 10 | 11:
-        estacion("Es otoño.")
+        estacion = "Otoño"
     case _:
-        estacion("Número de mes inválido.")
-        print("Estaccion", estacion)
+        estacion = "Número de mes inválido."
+
+print("Estación:", estacion)
